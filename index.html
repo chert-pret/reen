@@ -13,11 +13,13 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <div class="container header-row">
-        <div class="grid header-info">
+    <header>
+      <div class="container header-row"> <!--for pre header color-->
+        <div class="grid pre-header">
+          <!-- left part of preheader -->
           <div class="header-connection">
             <a class="connection" href="mailto:info@reen.com">
               <svg class="img-connect kostil" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
@@ -44,6 +46,7 @@
                 </svg><span>+00 (123) 456 78 90</span>
             </a>
           </div>
+          <!-- right part of preheader -->
           <div class="social">
             <a class="img-info facebook" href="https://www.facebook.com/" target="_blank">
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g>
@@ -79,13 +82,14 @@
       <div class="grid">
         <div class="header-container">
           <div class="logo">
-            <img src="/assets/images/header/navbar/logo.jpg" alt="reen logo" />
+            <img src="./assets/images/header/navbar/logo.jpg" alt="reen logo" />
           </div>
 
           <nav class="nav">
-            <ul>
+            <ul class="drop">
               <li class="drop-menu">
                 <a class="nav-header nav-default" href="#">home</a>
+                <!-- shows on hover -->
                 <ul class="down">
                   <li>Agency Style</li>
                   <li>Product Style</li>
@@ -106,242 +110,243 @@
               <li class="drop-menu">
                 <a class="nav-header nav-default" href="#">features</a>
               </li>
-              <li class="drop-menu">
-                <a class="nav-header nav-default">mega menu</a>
-                <div class="mega-menu">
-                  <div class="wrap">
-                  <div class="mega-menu-item">
-                    <h3>Focus on</h3>
-                    <div class="mega-menu-img big">
-                      <img class="img" src="/assets/images/header/navbar/mega-menu/image1.png" alt="">
-                      <div class="work-icon">
-                        <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                      </div>
-                  </div>
-                    <p>Consed quodips ameniat empernam que apid cust quas molor eatis numa estio.</p>
-                    <a class="btn-default" href="#">View project</a>
-                  </div>
-                  <div class="mega-menu-item">
-                    <h3>Special pages</h3>
-                    <ul>
-                      <li>
-                        <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 341.3 341.3" xml:space="preserve">
-                     <g>
-                       <g>
-                         <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                            M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                       </g>
-                     </g>
-                     </svg>
-                     <span>3 Columns Details Grid Portfolio</span>
-                    </li>
-                      <li>
-                        <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 341.3 341.3" xml:space="preserve">
-                     <g>
-                       <g>
-                         <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                            M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                       </g>
-                     </g>
-                     </svg>
-                        <span>Fullscreen Grid Portfolio</span>
-                      </li>
-                      <li>
-                        <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 341.3 341.3" xml:space="preserve">
-                     <g>
-                       <g>
-                         <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                            M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                       </g>
-                     </g>
-                     </svg>
-                        <span>Portfolio Post with Video</span>
-                      </li>
-                      <li>
-                        <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 341.3 341.3" xml:space="preserve">
-                     <g>
-                       <g>
-                         <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                            M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                       </g>
-                     </g>
-                     </svg>
-                     <span>2 Columns Grid Blog with Left Sidebar</span>
-                    </li>
-                      <li>
-                        <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 341.3 341.3" xml:space="preserve">
-                     <g>
-                       <g>
-                         <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                            M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                       </g>
-                     </g>
-                     </svg>
-                        <span>3 Columns Grid Blog without Sidebar</span>
-                      </li>
-                      <li>
-                        <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 341.3 341.3" xml:space="preserve">
-                     <g>
-                       <g>
-                         <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                            M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                       </g>
-                     </g>
-                     </svg>
-                        <span>Blog Post with Right Sidebar</span>
-                      </li>
-                      <li>
-                        <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 341.3 341.3" xml:space="preserve">
-                     <g>
-                       <g>
-                         <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                            M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                       </g>
-                     </g>
-                     </svg>
-                        <span>Side Navigation Page</span>
-                      </li>
-                      <li>
-                        <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 341.3 341.3" xml:space="preserve">
-                     <g>
-                       <g>
-                         <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                            M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                       </g>
-                     </g>
-                     </svg>
-                        <span>About Page II</span>
-                      </li>
-                      <li>
-                        <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 341.3 341.3" xml:space="preserve">
-                     <g>
-                       <g>
-                         <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                            M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                       </g>
-                     </g>
-                     </svg>
-                        <span>Service Page I</span>
-                      </li>
-                      <li>
-                        <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 341.3 341.3" xml:space="preserve">
-                     <g>
-                       <g>
-                         <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                            M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                       </g>
-                     </g>
-                     </svg>
-                        <span>Pricing Page I</span>
-                      </li>
-                      <li>
-                        <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 341.3 341.3" xml:space="preserve">
-                     <g>
-                       <g>
-                         <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                            M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                       </g>
-                     </g>
-                     </svg>
-                        <span>Contact Page I</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="mega-menu-item">
-                    <h3>Latest works</h3>
-                    <div class="artworks">
-                      <div class="mega-menu-img">
-                        <img class="img" src="/assets/images/header/navbar/mega-menu/work1.png" alt="grand motel">
-                        <div class="work-icon">
-                          <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                        </div>
-                      </div>
-                      
-                      <div class="mega-menu-img">
-                        <img class="img" src="/assets/images/header/navbar/mega-menu/work2.png" alt="web mockup">
-                        <div class="work-icon">
-                          <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                        </div>
-                      </div>
-      
-                      <div class="mega-menu-img">
-                        <img class="img" src="/assets/images/header/navbar/mega-menu/work3.png" alt="simly nota mockup">
-                        <div class="work-icon">
-                          <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                        </div>
-                      </div>
-      
-                      <div class="mega-menu-img">
-                        <img class="img" src="/assets/images/header/navbar/mega-menu/work4.png" alt="logo mockup">
-                        <div class="work-icon">
-                          <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                        </div>
-                      </div>
-      
-                      <div class="mega-menu-img">
-                        <img class="img" src="/assets/images/header/navbar/mega-menu/work5.png" alt="cards mockup">
-                        <div class="work-icon">
-                          <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                        </div>
-                      </div>
-      
-                      <div class="mega-menu-img">
-                        <img class="img" src="/assets/images/header/navbar/mega-menu/work6.png" alt="vinyl record mockup">
-                        <div class="work-icon">
-                          <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                        </div>
-                      </div>
-      
-                    </div>
-                  </div>
-                  <div class="mega-menu-item">
-                    <h3>About us</h3>
-                    <div>
-                      <p>Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.</p>
-                      <p>Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.</p>
-                    </div>
-                    <a class="btn-default" href="#">Read more</a>
-                  </div>
-                </div>
-                </div>
+              <!-- mega menu is shown and hidden on click-->
+              <li class="drop-menu button-show">
+                <a class="nav-header nav-default">mega menu</a>  
               </li>
               <li class="drop-menu">
                 <a class="nav-header nav-default" href="#">contact</a>
               </li>
             </ul>            
           </nav>
+          <div class="mega-menu hide">
+            <div class="wrap">
+            <div class="mega-menu-item">
+              <h3>Focus on</h3>
+              <div class="mega-menu-img big">
+                <img class="img" src="./assets/images/header/navbar/mega-menu/image1.png" alt="">
+                <div class="work-icon">
+                  <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                </div>
+            </div>
+              <p>Consed quodips ameniat empernam que apid cust quas molor eatis numa estio.</p>
+              <a class="btn-default" href="#">View project</a>
+            </div>
+            <div class="mega-menu-item">
+              <h3>Special pages</h3>
+              <ul>
+                <li>
+                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 341.3 341.3" xml:space="preserve">
+               <g>
+                 <g>
+                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
+                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
+                 </g>
+               </g>
+               </svg>
+               <span>3 Columns Details Grid Portfolio</span>
+              </li>
+                <li>
+                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 341.3 341.3" xml:space="preserve">
+               <g>
+                 <g>
+                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
+                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
+                 </g>
+               </g>
+               </svg>
+                  <span>Fullscreen Grid Portfolio</span>
+                </li>
+                <li>
+                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 341.3 341.3" xml:space="preserve">
+               <g>
+                 <g>
+                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
+                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
+                 </g>
+               </g>
+               </svg>
+                  <span>Portfolio Post with Video</span>
+                </li>
+                <li>
+                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 341.3 341.3" xml:space="preserve">
+               <g>
+                 <g>
+                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
+                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
+                 </g>
+               </g>
+               </svg>
+               <span>2 Columns Grid Blog with Left Sidebar</span>
+              </li>
+                <li>
+                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 341.3 341.3" xml:space="preserve">
+               <g>
+                 <g>
+                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
+                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
+                 </g>
+               </g>
+               </svg>
+                  <span>3 Columns Grid Blog without Sidebar</span>
+                </li>
+                <li>
+                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 341.3 341.3" xml:space="preserve">
+               <g>
+                 <g>
+                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
+                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
+                 </g>
+               </g>
+               </svg>
+                  <span>Blog Post with Right Sidebar</span>
+                </li>
+                <li>
+                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 341.3 341.3" xml:space="preserve">
+               <g>
+                 <g>
+                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
+                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
+                 </g>
+               </g>
+               </svg>
+                  <span>Side Navigation Page</span>
+                </li>
+                <li>
+                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 341.3 341.3" xml:space="preserve">
+               <g>
+                 <g>
+                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
+                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
+                 </g>
+               </g>
+               </svg>
+                  <span>About Page II</span>
+                </li>
+                <li>
+                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 341.3 341.3" xml:space="preserve">
+               <g>
+                 <g>
+                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
+                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
+                 </g>
+               </g>
+               </svg>
+                  <span>Service Page I</span>
+                </li>
+                <li>
+                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 341.3 341.3" xml:space="preserve">
+               <g>
+                 <g>
+                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
+                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
+                 </g>
+               </g>
+               </svg>
+                  <span>Pricing Page I</span>
+                </li>
+                <li>
+                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 341.3 341.3" xml:space="preserve">
+               <g>
+                 <g>
+                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
+                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
+                 </g>
+               </g>
+               </svg>
+                  <span>Contact Page I</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mega-menu-item">
+              <h3>Latest works</h3>
+              <div class="artworks">
+                <div class="mega-menu-img">
+                  <img class="img" src="./assets/images/header/navbar/mega-menu/work1.png" alt="grand motel">
+                  <div class="work-icon">
+                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                  </div>
+                </div>
+                
+                <div class="mega-menu-img">
+                  <img class="img" src="./assets/images/header/navbar/mega-menu/work2.png" alt="web mockup">
+                  <div class="work-icon">
+                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                  </div>
+                </div>
 
+                <div class="mega-menu-img">
+                  <img class="img" src="./assets/images/header/navbar/mega-menu/work3.png" alt="simly nota mockup">
+                  <div class="work-icon">
+                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                  </div>
+                </div>
+
+                <div class="mega-menu-img">
+                  <img class="img" src="./assets/images/header/navbar/mega-menu/work4.png" alt="logo mockup">
+                  <div class="work-icon">
+                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                  </div>
+                </div>
+
+                <div class="mega-menu-img">
+                  <img class="img" src="./assets/images/header/navbar/mega-menu/work5.png" alt="cards mockup">
+                  <div class="work-icon">
+                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                  </div>
+                </div>
+
+                <div class="mega-menu-img">
+                  <img class="img" src="./assets/images/header/navbar/mega-menu/work6.png" alt="vinyl record mockup">
+                  <div class="work-icon">
+                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="mega-menu-item">
+              <h3>About us</h3>
+              <div>
+                <p>Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.</p>
+                <p>Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.</p>
+              </div>
+              <a class="btn-default" href="#">Read more</a>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-
         <section class="hero">
           <div class="container">
           <!-- slider -->
           <div class="slider">
+            <!-- to switch between slides -->
             <input id="slide1" type="radio" name="slider" checked>
             <input id="slide2" type="radio" name="slider">
             <input id="slide3" type="radio" name="slider">
             <input id="slide4" type="radio" name="slider">
             <input id="slide5" type="radio" name="slider">
-          
           <div class="slides">
             <div class="slider-container">
+              <!-- "inner-content" for the slide feed  -->
               <div class="inner-content">    
               <div class="slide slide-1">
+                <!-- "slide-grid" for positioning content-->
                 <div class="slide-grid">
                 <div class="content">
                   <h1>Made for Designers</h1>
@@ -349,7 +354,7 @@
                    <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
                 </div>
                 </div>
-                  <img src="/assets/images/main/hero/item1.jpg" alt="slider 1">
+                  <img src="./assets/images/main/hero/item1.png" alt="slider1">
               </div>
               
               <div class="slide slide-2">
@@ -360,7 +365,7 @@
                   <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
                 </div>
                 </div>
-                <img src="/assets/images/main/hero/item2.jpg" alt="slider 1">
+                <img src="./assets/images/main/hero/item2.jpg" alt="slider 1">
               </div>
               
               <div class="slide slide-3">
@@ -371,7 +376,7 @@
                   <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
                 </div>
               </div>
-                  <img src="/assets/images/main/hero/item3.jpg" alt="">
+                  <img src="./assets/images/main/hero/item3.jpg" alt="">
               </div>
               
               <div class="slide slide-4">
@@ -384,7 +389,7 @@
                   <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
                 </div>
               </div>
-                  <img src="/assets/images/main/hero/item4.jpg" alt="">
+                  <img src="./assets/images/main/hero/item4.jpg" alt="">
               </div>
             
               <div class="slide slide-5">
@@ -398,9 +403,8 @@
                   <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
                 </div>
               </div>
-                  <img src="/assets/images/main/hero/item5.jpg" alt="">
-              </div>
-              
+                  <img src="./assets/images/main/hero/item5.jpg" alt="">
+              </div>            
             </div>
             </div>
           </div>
@@ -422,7 +426,6 @@
           </div>
         </div>
         </section>
-
         <section class="who-we-are">
           <div class="container">
               <div class="header-text grid">
@@ -439,7 +442,7 @@
                   
                   <div class="article-item">
 
-                    <img class="who-we-are_icon" src="/assets/images/main/who-we-are/icon-heart-empty-1.png" alt="heart">
+                    <img class="who-we-are_icon" src="./assets/images/main/who-we-are/icon-heart-empty-1.png" alt="heart">
                
                       <h3 class="article-header">Passion</h3>
                       <p class="paragraph">Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
@@ -448,7 +451,7 @@
 
                 <div class="article-item">
 
-                  <img class="who-we-are_icon" src="/assets/images/main/who-we-are/icon-lamp.png" alt="lamp">
+                  <img class="who-we-are_icon" src="./assets/images/main/who-we-are/icon-lamp.png" alt="lamp">
 
                     <h3 class="article-header">Creativity</h3>
                     <p class="paragraph">Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis</p>
@@ -457,7 +460,7 @@
 
                 <div class="article-item">
 
-                  <img class="who-we-are_icon" src="/assets/images/main/who-we-are/icon-star-empty-1.png" alt="star">
+                  <img class="who-we-are_icon" src="./assets/images/main/who-we-are/icon-star-empty-1.png" alt="star">
 
                     <h3 class="article-header">Quality</h3>
                     <p class="paragraph">Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis</p>
@@ -482,9 +485,9 @@
             <div class="works grid">
               <div class="work-item">
                 <div class="work-img">
-                  <img class="img" src="/assets/images/main/latest-work/figure1.png" alt="grand motel">
+                  <img class="img" src="./assets/images/main/latest-work/figure1.png" alt="grand motel">
                   <div class="work-icon">
-                    <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
                   </div>
                 </div>
                 
@@ -497,9 +500,9 @@
               </div>
               <div class="work-item">
                 <div class="work-img">
-                  <img class="img" src="/assets/images/main/latest-work/figure2.png" alt="branding for startup">
+                  <img class="img" src="./assets/images/main/latest-work/figure2.png" alt="branding for startup">
                   <div class="work-icon">
-                    <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
                   </div>
                 </div>
                 
@@ -511,19 +514,19 @@
                 </p>
               </div>
             </div>
-
+            <!-- mini slider -->
             <div class="carousel">
               <!--Slider-->
               <div class="slider">
                 <input type="radio" id="mini-slide-1" name="mini-slider">
-                <input type="radio" id="mini-slide-2" name="mini-slider" checked>
+                <input type="radio" id="mini-slide-2" name="mini-slider"   checked>
                 <input type="radio" id="mini-slide-3" name="mini-slider">
               <div class="slides">
                 <div class="slider-container">
                   <div class="inner-minicontent">
                     <div class="mini-slide mini-slide-1">
                       <div class="carousel-img">
-                        <img class="img" src="/assets/images/main/latest-work/item1.jpg" alt="Embroidered logo PSD mockup">
+                        <img class="img" src="./assets/images/main/latest-work/item1.jpg" alt="Embroidered logo PSD mockup">
                         <div class="cover-text">
                           <h4>Embroidered logo PSD mockup</h4>
                           <p>Identity</p>
@@ -532,7 +535,7 @@
                     </div>
                     <div class="mini-slide mini-slide-2">
                       <div class="carousel-img">
-                        <img class="img" src="/assets/images/main/latest-work/item2.jpg" alt="simpl nota mockup">
+                        <img class="img" src="./assets/images/main/latest-work/item2.jpg" alt="simpl nota mockup">
                         <div class="cover-text">
                           <h4>Simpl Nota</h4>
                           <p>Identity</p>
@@ -541,16 +544,16 @@
                     </div>
                     <div class="mini-slide mini-slide-3">
                       <div class="carousel-img">
-                        <img class="img" src="/assets/images/main/latest-work/item3.jpg" alt="Vinyl record PSD mockup">
+                        <img class="img" src="./assets/images/main/latest-work/item3.jpg" alt="Vinyl record PSD mockup">
                         <div class="cover-text">
-                          <h4 class="d">Vinyl record PSD mockup</h4>
+                          <h4>Vinyl record PSD mockup</h4>
                           <p>Identity</p>
                         </div>
                       </div> 
                     </div>
                     <div class="mini-slide mini-slide-4">
                       <div class="carousel-img">
-                        <img class="img" src="/assets/images/main/latest-work/item4.jpg" alt="Astor & Yancy">
+                        <img class="img" src="./assets/images/main/latest-work/item4.jpg" alt="Astor & Yancy">
                         <div class="cover-text">
                           <h4>Astor & Yancy</h4>
                           <p>Identity</p>
@@ -559,7 +562,7 @@
                     </div>
                     <div class="mini-slide mini-slide-5">
                       <div class="carousel-img">
-                        <img class="img" src="/assets/images/main/latest-work/item5.jpg" alt="Signwall">
+                        <img class="img" src="./assets/images/main/latest-work/item5.jpg" alt="Signwall">
                         <div class="cover-text">
                           <h4>Signwall</h4>
                           <p>Identity</p>
@@ -568,7 +571,7 @@
                     </div>
                     <div class="mini-slide mini-slide-6">
                       <div class="carousel-img">
-                        <img class="img" src="/assets/images/main/latest-work/item6.jpg" alt="Business card  PSD mockup">
+                        <img class="img" src="./assets/images/main/latest-work/item6.jpg" alt="Business card  PSD mockup">
                         <div class="cover-text">
                           <h4>Business card  PSD mockup</h4>
                           <p>Identity</p>
@@ -607,7 +610,6 @@
           </div>
 
         </section>
-
     </main>
 
     <footer class="footer">
@@ -620,7 +622,7 @@
         <div class="footer-item paragraph footer-text-style">
           <h3>who we are</h3>
           <a href="#">
-            <img class="footer-logo" src="/assets/images/footer/logo.png" alt="reen logo">
+            <img class="footer-logo" src="./assets/images/footer/logo.png" alt="reen logo">
           </a>
           <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
           <a class="more" href="#">
@@ -640,30 +642,30 @@
 
           <div class="img-container">
             <div class="footer-img">
-            <img class="img" src="/assets/images/footer/image1.png" alt="grand motel">
+            <img class="img" src="./assets/images/footer/image1.png" alt="grand motel">
             <div class="work-icon">
-              <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+              <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
             </div>
           </div>
 
             <div class="footer-img">
-            <img class="img" src="/assets/images/footer/image2.png" alt="web">
+            <img class="img" src="./assets/images/footer/image2.png" alt="web">
             <div class="work-icon">
-              <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+              <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
             </div>
           </div>
 
             <div class="footer-img">
-            <img class="img" src="/assets/images/footer/image3.png" alt="vinyl record psd mockup">
+            <img class="img" src="./assets/images/footer/image3.png" alt="vinyl record psd mockup">
             <div class="work-icon">
-              <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+              <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
             </div>
           </div>
 
             <div class="footer-img">
-            <img class="img" src="/assets/images/footer/image4.png" alt="phone mockup">
+            <img class="img" src="./assets/images/footer/image4.png" alt="phone mockup">
             <div class="work-icon">
-              <img src="/assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+              <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
             </div>
           </div>
 
@@ -715,8 +717,8 @@
           <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
 
           <div class="subscribe-form">
-            <form action="formHandler.php" name="subscribe-form" autocomplete="on">
-              <input class="subscribe" type="email" placeholder="Enter your email address" required>
+            <form name="subscribe-form" autocomplete="on">
+              <input class="subscribe" type="email" placeholder="Your email..." required>
               <input type="submit" name="submit" value="subscribe" class="btn-default btn-submit">
             </form>
           </div>
