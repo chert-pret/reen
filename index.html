@@ -13,325 +13,69 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
       rel="stylesheet"
     />
-    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/8a5b4365d1.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="container header-row"> <!--for pre header color-->
         <div class="grid pre-header">
           <!-- left part of preheader -->
           <div class="header-connection">
             <a class="connection" href="mailto:info@reen.com">
-              <svg class="img-connect kostil" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
-              <g>
-                <path d="M512,127.5v-8.1c0-30.4-24.7-55.2-55.2-55.2H55.2C24.7,64.3,0,89,0,119.4v8.1v0.1v265
-                  c0,30.4,24.7,55.2,55.2,55.2h401.7c30.4,0,55.2-24.7,55.2-55.2V127.5C512,127.6,512,127.5,512,127.5L512,127.5z M55.2,94.3h401.7
-                  c13.9,0,25.2,11.3,25.2,25.2v0L281.1,253.4c-13.4,8.9-36.8,8.9-50.2,0L30,119.4v0C30,105.6,41.3,94.3,55.2,94.3L55.2,94.3z
-                  M456.8,417.7H55.2c-13.9,0-25.2-11.3-25.2-25.2V155.5l184.3,122.8C226,286.1,241,290,256,290c15,0,30-3.9,41.7-11.7L482,155.5
-                  v237.1C482,406.4,470.7,417.7,456.8,417.7z"/>
-              </g>
-              </svg> <span>info@reen.com</span>
+              <i class="far fa-envelope"></i>
+              <span>info@reen.com</span>
               
             </a>
             <a class="connection" href="tel:+001234567890">
-              <svg class="img-connect kostil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve">
-                <g>
-                  <g>
-                    <path d="M370.1,0H141.9c-19,0-34.6,15.6-34.6,34.6v442.8c0,19,15.6,34.6,34.6,34.6h228.3c19,0,34.6-15.5,34.6-34.6
-                      V34.6C404.7,15.6,389.1,0,370.1,0z M219.5,24.9h73c2.3,0,4.2,1.9,4.2,4.2c0,2.3-1.9,4.2-4.2,4.2h-73c-2.3,0-4.2-1.9-4.2-4.2
-                      C215.3,26.8,217.2,24.9,219.5,24.9z M256,494.7c-9.6,0-17.3-7.7-17.3-17.3s7.7-17.3,17.3-17.3s17.3,7.7,17.3,17.3
-                      S265.6,494.7,256,494.7z M380.7,448H131.3V54.8h249.3V448z"/>
-                  </g>
-                </g>
-                </svg><span>+00 (123) 456 78 90</span>
+              <i class="fas fa-mobile-alt"></i>
+              <span>+00 (123) 456 78 90</span>
             </a>
           </div>
           <!-- right part of preheader -->
           <div class="social">
             <a class="img-info facebook" href="https://www.facebook.com/" target="_blank">
-              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g>
-                <path d="M384,176h-96v-64c0-17.664,14.336-32,32-32h32V0h-64l0,0c-53.024,0-96,42.976-96,96v80h-64v80h64v256  h96V256h64L384,176z"/></g> 
-              </svg>
+              <i class="fab fa-facebook-f"></i>
             </a>
             <a class="img-info google" href="https://myaccount.google.com/" target="_blank">
-              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96.669 96.669" xml:space="preserve"><g><g>
-                <g>
-                  <path d="M50.91,55.189l-4.533-3.522c-1.38-1.144-3.27-2.656-3.27-5.422c0-2.778,1.889-4.544,3.527-6.18    c5.279-4.157,10.557-8.581,10.557-17.903c0-9.586-6.031-14.629-8.923-17.022h7.795L64.244,0H39.459    C32.658,0,22.856,1.608,15.68,7.533c-5.408,4.666-8.046,11.099-8.046,16.892c0,9.831,7.548,19.798,20.88,19.798    c1.259,0,2.636-0.124,4.022-0.252c-0.623,1.515-1.252,2.777-1.252,4.917c0,3.905,2.006,6.299,3.774,8.567    c-5.663,0.39-16.237,1.018-24.033,5.809c-7.424,4.415-9.684,10.84-9.684,15.377c0,9.334,8.8,18.028,27.045,18.028    c21.636,0,33.089-11.971,33.089-23.823C61.477,64.139,56.447,59.854,50.91,55.189z M34.431,40.691    c-10.824,0-15.727-13.992-15.727-22.434c0-3.288,0.623-6.682,2.763-9.333C23.486,6.4,27,4.762,30.281,4.762    c10.434,0,15.846,14.118,15.846,23.197c0,2.271-0.251,6.296-3.144,9.207C40.96,39.187,37.574,40.691,34.431,40.691z     M34.555,91.387c-13.46,0-22.139-6.438-22.139-15.392c0-8.949,8.048-11.978,10.816-12.979c5.281-1.777,12.076-2.024,13.21-2.024    c1.258,0,1.887,0,2.889,0.126c9.568,6.81,13.721,10.203,13.721,16.65C53.053,85.573,46.635,91.387,34.555,91.387z"/>
-                  <polygon points="82.679,40.499 82.679,27.894 76.455,27.894 76.455,40.499 63.869,40.499 63.869,46.793 76.455,46.793     76.455,59.477 82.679,59.477 82.679,46.793 95.328,46.793 95.328,40.499"/>
-                </g>
-              </g></g> </svg>
+              <i class="fab fa-google-plus-g"></i>
             </a>
             <a class="img-info twitter" href="https://twitter.com/" target="_blank">
-              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g><g>
-                <g>
-                  <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z"/>
-                </g>
-              </g></g> </svg>
+              <i class="fab fa-twitter"></i>
             <a class="img-info pinterest" href="https://www.pinterest.com/" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="m12.326 0c-6.579.001-10.076 4.216-10.076 8.812 0 2.131 1.191 4.79 3.098 5.633.544.245.472-.054.94-1.844.037-.149.018-.278-.102-.417-2.726-3.153-.532-9.635 5.751-9.635 9.093 0 7.394 12.582 1.582 12.582-1.498 0-2.614-1.176-2.261-2.631.428-1.733 1.266-3.596 1.266-4.845 0-3.148-4.69-2.681-4.69 1.49 0 1.289.456 2.159.456 2.159s-1.509 6.096-1.789 7.235c-.474 1.928.064 5.049.111 5.318.029.148.195.195.288.073.149-.195 1.973-2.797 2.484-4.678.186-.685.949-3.465.949-3.465.503.908 1.953 1.668 3.498 1.668 4.596 0 7.918-4.04 7.918-9.053-.016-4.806-4.129-8.402-9.423-8.402z"/></g> </svg>
+              <i class="fab fa-pinterest-p"></i>
             </a>
             <a class="img-info behance" href="https://www.behance.net/" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><g><path d="m12.363 14.947c0-1.848-.879-3.214-2.695-3.726 1.325-.631 2.016-1.587 2.016-3.074 0-2.932-2.192-3.647-4.721-3.647h-6.963v14.721h7.158c2.684 0 5.205-1.283 5.205-4.274zm-9.117-7.934h3.046c1.171 0 2.225.328 2.225 1.682 0 1.25-.82 1.753-1.98 1.753h-3.291zm-.001 9.708v-4.054h3.538c1.429 0 2.333.594 2.333 2.102 0 1.487-1.079 1.952-2.4 1.952z"/><path d="m18.796 19.5c2.554 0 4.208-1.147 5.004-3.585h-2.592c-.279.91-1.429 1.391-2.321 1.391-1.721 0-2.625-1.005-2.625-2.713h7.713c.013-.173.025-.36.025-.547 0-3.153-1.85-5.782-5.204-5.782-3.259 0-5.471 2.442-5.471 5.641-.001 3.318 2.095 5.595 5.471 5.595zm-.092-9.026c1.475 0 2.217.864 2.341 2.277h-4.779c.097-1.401 1.03-2.277 2.438-2.277z"/><path d="m15.667 5.273h5.988v1.45h-5.988z"/></g></g> </svg>
+              <i class="fab fa-behance"></i>
             </a>
             <a class="img-info dribble" href="https://dribbble.com/" target="_blank">
-              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g><path d="M256,0C115.04,0,0,115.05,0,256c0,140.96,115.05,256,256,256c140.96,0,256-115.05,256-256C512,115.04,396.95,0,256,0z   M429.64,111.51c31.96,38.34,51.47,87.39,52.31,140.89c-40.06-9.37-84.55-10-129.86-1.74c-11.79,2.15-23.58,4.88-35.3,8.16  c-3.9-10.61-8.04-21.13-12.44-31.55c-4.49-10.63-9.23-21.08-14.19-31.38C344.15,175.27,402.65,144.57,429.64,111.51z M256,30  c58.82,0,112.45,22.59,152.7,59.54C393,110.95,348.26,142.12,276.48,169c-25.06-46.66-55.11-89.54-89.83-128.1  C208.51,33.83,231.82,30,256,30z M156.95,52.9c35.41,37.93,65.87,80.29,90.96,126.05c-74.68,24.17-150.29,34.03-212.46,27.66  C50.59,138.96,96.14,82.67,156.95,52.9z M30,256c0-6.64,0.31-13.21,0.87-19.7c13.72,1.45,28.03,2.18,42.82,2.18  c58.33,0,123.86-11.22,188.21-32.53c9.82,20.1,18.65,40.78,26.44,61.97c-25.09,9.02-49.51,20.49-72.44,34.14  c-56.22,33.47-97.35,76.53-114.41,118.71C57.52,379.51,30,320.91,30,256z M256,482c-48.29,0-93.09-15.23-129.86-41.14  c11.4-38.52,49.96-80.19,105.11-113.02c19.43-11.58,42.15-22.49,66.88-31.36c17.53,55.1,28.27,113.26,31.68,173.13  C306.67,477.63,281.84,482,256,482z M359.07,457.1c-4.16-58.32-15.02-115.1-32.45-169.64c48.6-13.36,102.58-17.84,153.77-4.56  C471.33,358.91,424.41,423.47,359.07,457.1z"/></g> </svg>
+              <i class="fab fa-dribbble"></i>
             </a>
           </div>
         </div>
       </div>
-      <div class="grid">
-        <div class="header-container">
-          <div class="logo">
-            <img src="./assets/images/header/navbar/logo.jpg" alt="reen logo" />
+
+      <div id="fixed-header">     
+          <div class="header-container">
+            <div class="logo" data-scroll="#hero">
+              <img src="./assets/images/header/navbar/logo.jpg" alt="reen logo" />
+            </div>
+
+            <nav class="nav" id="nav">
+                  <a class="nav-header nav-default" href="#" data-scroll="#hero">home</a>
+                  <a class="nav-header nav-default" href="#" data-scroll="#portfolio">portfolio</a>
+                  <a class="nav-header nav-default" href="#" data-scroll="#blog">blog</a>
+                  <a class="nav-header nav-default" href="#" data-scroll="#hero">pages</a>
+                  <a class="nav-header nav-default" href="#" data-scroll="#features">features</a>
+                  <a class="nav-header nav-default" href="#" data-scroll="#contact">contact</a>          
+            </nav>
+            <button class="nav-toggle" id="nav-toggle">
+              <span class="nav-toggle-item"></span>
+            </button>
           </div>
-
-          <nav class="nav">
-            <ul class="drop">
-              <li class="drop-menu">
-                <a class="nav-header nav-default" href="#">home</a>
-                <!-- shows on hover -->
-                <ul class="down">
-                  <li>Agency Style</li>
-                  <li>Product Style</li>
-                  <li>Service Style</li>
-                  <li>Portfolio Style</li>
-                  <li>Showcase Style</li>
-                </ul>
-              </li>
-              <li class="drop-menu">
-                <a class="nav-header nav-default" href="#">portfolio</a>
-              </li>
-              <li class="drop-menu">
-                <a class="nav-header nav-default" href="#">blog</a>
-              </li>
-              <li class="drop-menu">
-                <a class="nav-header nav-default" href="#">pages</a>
-              </li>
-              <li class="drop-menu">
-                <a class="nav-header nav-default" href="#">features</a>
-              </li>
-              <!-- mega menu is shown and hidden on click-->
-              <li class="drop-menu button-show">
-                <a class="nav-header nav-default">mega menu</a>  
-              </li>
-              <li class="drop-menu">
-                <a class="nav-header nav-default" href="#">contact</a>
-              </li>
-            </ul>            
-          </nav>
-          <div class="mega-menu hide">
-            <div class="wrap">
-            <div class="mega-menu-item">
-              <h3>Focus on</h3>
-              <div class="mega-menu-img big">
-                <img class="img" src="./assets/images/header/navbar/mega-menu/image1.png" alt="">
-                <div class="work-icon">
-                  <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                </div>
-            </div>
-              <p>Consed quodips ameniat empernam que apid cust quas molor eatis numa estio.</p>
-              <a class="btn-default" href="#">View project</a>
-            </div>
-            <div class="mega-menu-item">
-              <h3>Special pages</h3>
-              <ul>
-                <li>
-                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 341.3 341.3" xml:space="preserve">
-               <g>
-                 <g>
-                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                 </g>
-               </g>
-               </svg>
-               <span>3 Columns Details Grid Portfolio</span>
-              </li>
-                <li>
-                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 341.3 341.3" xml:space="preserve">
-               <g>
-                 <g>
-                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                 </g>
-               </g>
-               </svg>
-                  <span>Fullscreen Grid Portfolio</span>
-                </li>
-                <li>
-                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 341.3 341.3" xml:space="preserve">
-               <g>
-                 <g>
-                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                 </g>
-               </g>
-               </svg>
-                  <span>Portfolio Post with Video</span>
-                </li>
-                <li>
-                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 341.3 341.3" xml:space="preserve">
-               <g>
-                 <g>
-                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                 </g>
-               </g>
-               </svg>
-               <span>2 Columns Grid Blog with Left Sidebar</span>
-              </li>
-                <li>
-                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 341.3 341.3" xml:space="preserve">
-               <g>
-                 <g>
-                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                 </g>
-               </g>
-               </svg>
-                  <span>3 Columns Grid Blog without Sidebar</span>
-                </li>
-                <li>
-                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 341.3 341.3" xml:space="preserve">
-               <g>
-                 <g>
-                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                 </g>
-               </g>
-               </svg>
-                  <span>Blog Post with Right Sidebar</span>
-                </li>
-                <li>
-                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 341.3 341.3" xml:space="preserve">
-               <g>
-                 <g>
-                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                 </g>
-               </g>
-               </svg>
-                  <span>Side Navigation Page</span>
-                </li>
-                <li>
-                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 341.3 341.3" xml:space="preserve">
-               <g>
-                 <g>
-                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                 </g>
-               </g>
-               </svg>
-                  <span>About Page II</span>
-                </li>
-                <li>
-                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 341.3 341.3" xml:space="preserve">
-               <g>
-                 <g>
-                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                 </g>
-               </g>
-               </svg>
-                  <span>Service Page I</span>
-                </li>
-                <li>
-                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 341.3 341.3" xml:space="preserve">
-               <g>
-                 <g>
-                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                 </g>
-               </g>
-               </svg>
-                  <span>Pricing Page I</span>
-                </li>
-                <li>
-                  <svg class="marker" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 341.3 341.3" xml:space="preserve">
-               <g>
-                 <g>
-                   <path d="M170.7,0C76.4,0,0,76.4,0,170.7s76.4,170.7,170.7,170.7s170.7-76.4,170.7-170.7S264.9,0,170.7,0z
-                      M170.7,298.7c-70.7,0-128-57.3-128-128s57.3-128,128-128s128,57.3,128,128S241.4,298.7,170.7,298.7z"/>
-                 </g>
-               </g>
-               </svg>
-                  <span>Contact Page I</span>
-                </li>
-              </ul>
-            </div>
-            <div class="mega-menu-item">
-              <h3>Latest works</h3>
-              <div class="artworks">
-                <div class="mega-menu-img">
-                  <img class="img" src="./assets/images/header/navbar/mega-menu/work1.png" alt="grand motel">
-                  <div class="work-icon">
-                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                  </div>
-                </div>
-                
-                <div class="mega-menu-img">
-                  <img class="img" src="./assets/images/header/navbar/mega-menu/work2.png" alt="web mockup">
-                  <div class="work-icon">
-                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                  </div>
-                </div>
-
-                <div class="mega-menu-img">
-                  <img class="img" src="./assets/images/header/navbar/mega-menu/work3.png" alt="simly nota mockup">
-                  <div class="work-icon">
-                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                  </div>
-                </div>
-
-                <div class="mega-menu-img">
-                  <img class="img" src="./assets/images/header/navbar/mega-menu/work4.png" alt="logo mockup">
-                  <div class="work-icon">
-                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                  </div>
-                </div>
-
-                <div class="mega-menu-img">
-                  <img class="img" src="./assets/images/header/navbar/mega-menu/work5.png" alt="cards mockup">
-                  <div class="work-icon">
-                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                  </div>
-                </div>
-
-                <div class="mega-menu-img">
-                  <img class="img" src="./assets/images/header/navbar/mega-menu/work6.png" alt="vinyl record mockup">
-                  <div class="work-icon">
-                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="mega-menu-item">
-              <h3>About us</h3>
-              <div>
-                <p>Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.</p>
-                <p>Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.</p>
-              </div>
-              <a class="btn-default" href="#">Read more</a>
-            </div>
-          </div>
-          </div>
-        </div>
       </div>
     </header>
-
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
           <div class="container">
           <!-- slider -->
           <div class="slider">
@@ -426,7 +170,7 @@
           </div>
         </div>
         </section>
-        <section class="who-we-are">
+        <section class="who-we-are" id="features">
           <div class="container">
               <div class="header-text grid">
                 <h2 class="header-style">Beautiful. Clean. Responsive.</h2>
@@ -471,11 +215,10 @@
           </div>
           </div>
         </section>
-
-        <section class="latest-work">
+        <section class="latest-work" id="portfolio">
           <div class="container">
 
-            <div class="header-text">
+            <div class="header-text grid">
               <h2 class="header-style">Check out our latest works</h2>
                 <p>
                   Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
@@ -519,7 +262,7 @@
               <!--Slider-->
               <div class="slider">
                 <input type="radio" id="mini-slide-1" name="mini-slider">
-                <input type="radio" id="mini-slide-2" name="mini-slider"   checked>
+                <input type="radio" id="mini-slide-2" name="mini-slider" checked>
                 <input type="radio" id="mini-slide-3" name="mini-slider">
               <div class="slides">
                 <div class="slider-container">
@@ -596,8 +339,7 @@
 
           </div>
         </section>
-
-        <section class="get-in-touch">
+        <section class="get-in-touch" id="blog">
 
           <div class="container">
             <div class="header-text grid">
@@ -611,159 +353,132 @@
 
         </section>
     </main>
-
-    <footer class="footer">
-
+    <footer class="footer" id="contact">
       <div class="container">
+        <div class="footer-info grid">          
+          <div class="footer-item paragraph footer-text-style">
+            <h3>who we are</h3>
+            <img class="footer-logo" src="./assets/images/footer/logo.png" alt="reen logo" data-scroll="#header">
+            <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+            <a class="more" href="#"  data-scroll="#header">
+              More about as
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </a>
+          </div>
+          <div class="footer-item paragraph footer-text-style">
+            <h3>Latest works</h3>
 
-      <div class="footer-info grid">
+            <div class="img-container">
+              <div class="footer-img">
+              <img class="img" src="./assets/images/footer/image1.png" alt="grand motel">
+              <div class="work-icon">
+                <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+              </div>
+            </div>
 
-        
-        <div class="footer-item paragraph footer-text-style">
-          <h3>who we are</h3>
-          <a href="#">
-            <img class="footer-logo" src="./assets/images/footer/logo.png" alt="reen logo">
-          </a>
-          <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
-          <a class="more" href="#">
-            More about as
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832" xml:space="preserve">
-            <g>
-              <path d="M265.171,125.577l-80-80c-4.881-4.881-12.797-4.881-17.678,0c-4.882,4.882-4.882,12.796,0,17.678l58.661,58.661H12.5
-                c-6.903,0-12.5,5.597-12.5,12.5c0,6.902,5.597,12.5,12.5,12.5h213.654l-58.659,58.661c-4.882,4.882-4.882,12.796,0,17.678
-                c2.44,2.439,5.64,3.661,8.839,3.661s6.398-1.222,8.839-3.661l79.998-80C270.053,138.373,270.053,130.459,265.171,125.577z"/>
-            </g>
-            </svg>
-          </a>
-        </div>
+              <div class="footer-img">
+              <img class="img" src="./assets/images/footer/image2.png" alt="web">
+              <div class="work-icon">
+                <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+              </div>
+            </div>
 
-        <div class="footer-item paragraph footer-text-style">
-          <h3>Latest works</h3>
+              <div class="footer-img">
+              <img class="img" src="./assets/images/footer/image3.png" alt="vinyl record psd mockup">
+              <div class="work-icon">
+                <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+              </div>
+            </div>
 
-          <div class="img-container">
-            <div class="footer-img">
-            <img class="img" src="./assets/images/footer/image1.png" alt="grand motel">
-            <div class="work-icon">
-              <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+              <div class="footer-img">
+              <img class="img" src="./assets/images/footer/image4.png" alt="phone mockup">
+              <div class="work-icon">
+                <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+              </div>
+            </div>
+
             </div>
           </div>
+          <div class="footer-item paragraph footer-text-style">
+            <h3>Get in touch</h3>
+            <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
 
-            <div class="footer-img">
-            <img class="img" src="./assets/images/footer/image2.png" alt="web">
-            <div class="work-icon">
-              <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-            </div>
-          </div>
+            <div class="contacts">
+            <a class="connection" href="https://www.google.ru/maps/place/E+Sunset+St,+Long+Beach,+CA+90805,+%D0%A1%D0%A8%D0%90/@33.8475099,-118.1910412,16z/data=!4m5!3m4!1s0x80dd336ec2c36a57:0x9125a95979f2eb22!8m2!3d33.8492005!4d-118.1897884" target="_blank">
 
-            <div class="footer-img">
-            <img class="img" src="./assets/images/footer/image3.png" alt="vinyl record psd mockup">
-            <div class="work-icon">
-              <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-            </div>
-          </div>
-
-            <div class="footer-img">
-            <img class="img" src="./assets/images/footer/image4.png" alt="phone mockup">
-            <div class="work-icon">
-              <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-            </div>
-          </div>
-
-          </div>
-        </div>
-
-        <div class="footer-item paragraph footer-text-style">
-          <h3>Get in touch</h3>
-          <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
-
-          <div class="contacts">
-          <a class="connection" href="https://www.google.ru/maps/place/E+Sunset+St,+Long+Beach,+CA+90805,+%D0%A1%D0%A8%D0%90/@33.8475099,-118.1910412,16z/data=!4m5!3m4!1s0x80dd336ec2c36a57:0x9125a95979f2eb22!8m2!3d33.8492005!4d-118.1897884" target="_blank">
-
-            <svg class="img-connect" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512">
-              <g>
-              <g><path d="m407.579 87.677c-31.073-53.624-86.265-86.385-147.64-87.637-2.62-.054-5.257-.054-7.878 0-61.374 1.252-116.566 34.013-147.64 87.637-31.762 54.812-32.631 120.652-2.325 176.123l126.963 232.387c.057.103.114.206.173.308 5.586 9.709 15.593 15.505 26.77 15.505 11.176 0 21.183-5.797 26.768-15.505.059-.102.116-.205.173-.308l126.963-232.387c30.304-55.471 29.435-121.311-2.327-176.123zm-151.579 144.323c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.298 72-72 72z"/></g></g> </svg>
-            Sunset Street, California, CA 90805
-          </a>
-          <a class="connection" href="tel:+001234567890">
-            <svg class="img-connect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve">
-              <g>
+              <svg class="img-connect" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512">
                 <g>
-                  <path d="M370.1,0H141.9c-19,0-34.6,15.6-34.6,34.6v442.8c0,19,15.6,34.6,34.6,34.6h228.3c19,0,34.6-15.5,34.6-34.6
-                    V34.6C404.7,15.6,389.1,0,370.1,0z M219.5,24.9h73c2.3,0,4.2,1.9,4.2,4.2c0,2.3-1.9,4.2-4.2,4.2h-73c-2.3,0-4.2-1.9-4.2-4.2
-                    C215.3,26.8,217.2,24.9,219.5,24.9z M256,494.7c-9.6,0-17.3-7.7-17.3-17.3s7.7-17.3,17.3-17.3s17.3,7.7,17.3,17.3
-                    S265.6,494.7,256,494.7z M380.7,448H131.3V54.8h249.3V448z"/>
-                </g>
-              </g>
-              </svg>
-            +00 (123) 456 78 90
-          </a>
-          <a class="connection" href="mailto:info@reen.com">
-            <svg class="img-connect" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
-            <g>
-              <path d="M512,127.5v-8.1c0-30.4-24.7-55.2-55.2-55.2H55.2C24.7,64.3,0,89,0,119.4v8.1v0.1v265
-                c0,30.4,24.7,55.2,55.2,55.2h401.7c30.4,0,55.2-24.7,55.2-55.2V127.5C512,127.6,512,127.5,512,127.5L512,127.5z M55.2,94.3h401.7
-                c13.9,0,25.2,11.3,25.2,25.2v0L281.1,253.4c-13.4,8.9-36.8,8.9-50.2,0L30,119.4v0C30,105.6,41.3,94.3,55.2,94.3L55.2,94.3z
-                M456.8,417.7H55.2c-13.9,0-25.2-11.3-25.2-25.2V155.5l184.3,122.8C226,286.1,241,290,256,290c15,0,30-3.9,41.7-11.7L482,155.5
-                v237.1C482,406.4,470.7,417.7,456.8,417.7z"/>
-            </g>
-            </svg>
-            info@reen.com
-          </a>
-        </div>
-        </div>
-
-        <div class="footer-item paragraph footer-text-style">
-          <h3>Free updates</h3>
-          <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
-
-          <div class="subscribe-form">
-            <form name="subscribe-form" autocomplete="on">
-              <input class="subscribe" type="email" placeholder="Your email..." required>
-              <input type="submit" name="submit" value="subscribe" class="btn-default btn-submit">
-            </form>
-          </div>
-
-          <a href="#">
-          <div class="to-top">
-            <div class="preloader">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve" class="top-arrow">
-              <g>
+                <g><path d="m407.579 87.677c-31.073-53.624-86.265-86.385-147.64-87.637-2.62-.054-5.257-.054-7.878 0-61.374 1.252-116.566 34.013-147.64 87.637-31.762 54.812-32.631 120.652-2.325 176.123l126.963 232.387c.057.103.114.206.173.308 5.586 9.709 15.593 15.505 26.77 15.505 11.176 0 21.183-5.797 26.768-15.505.059-.102.116-.205.173-.308l126.963-232.387c30.304-55.471 29.435-121.311-2.327-176.123zm-151.579 144.323c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.298 72-72 72z"/></g></g> </svg>
+              Sunset Street, California, CA 90805
+            </a>
+            <a class="connection" href="tel:+001234567890">
+              <svg class="img-connect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve">
                 <g>
                   <g>
-                    <path d="M230.4,123.5L25.6,328.2c-14.2,14.2-14.2,37.1,0,51.3l9.1,9.1c14.2,14.2,37.1,14.2,51.3,0l144.3-144.3
-                      c14.2-14.2,37.1-14.2,51.3,0L426,388.5c14.2,14.2,37.1,14.2,51.3,0l9.1-9.1c14.2-14.2,14.2-37.1,0-51.3L281.6,123.5
-                      C267.5,109.3,244.5,109.3,230.4,123.5z"/>
+                    <path d="M370.1,0H141.9c-19,0-34.6,15.6-34.6,34.6v442.8c0,19,15.6,34.6,34.6,34.6h228.3c19,0,34.6-15.5,34.6-34.6
+                      V34.6C404.7,15.6,389.1,0,370.1,0z M219.5,24.9h73c2.3,0,4.2,1.9,4.2,4.2c0,2.3-1.9,4.2-4.2,4.2h-73c-2.3,0-4.2-1.9-4.2-4.2
+                      C215.3,26.8,217.2,24.9,219.5,24.9z M256,494.7c-9.6,0-17.3-7.7-17.3-17.3s7.7-17.3,17.3-17.3s17.3,7.7,17.3,17.3
+                      S265.6,494.7,256,494.7z M380.7,448H131.3V54.8h249.3V448z"/>
                   </g>
                 </g>
+                </svg>
+              +00 (123) 456 78 90
+            </a>
+            <a class="connection" href="mailto:info@reen.com">
+              <svg class="img-connect" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+              <g>
+                <path d="M512,127.5v-8.1c0-30.4-24.7-55.2-55.2-55.2H55.2C24.7,64.3,0,89,0,119.4v8.1v0.1v265
+                  c0,30.4,24.7,55.2,55.2,55.2h401.7c30.4,0,55.2-24.7,55.2-55.2V127.5C512,127.6,512,127.5,512,127.5L512,127.5z M55.2,94.3h401.7
+                  c13.9,0,25.2,11.3,25.2,25.2v0L281.1,253.4c-13.4,8.9-36.8,8.9-50.2,0L30,119.4v0C30,105.6,41.3,94.3,55.2,94.3L55.2,94.3z
+                  M456.8,417.7H55.2c-13.9,0-25.2-11.3-25.2-25.2V155.5l184.3,122.8C226,286.1,241,290,256,290c15,0,30-3.9,41.7-11.7L482,155.5
+                  v237.1C482,406.4,470.7,417.7,456.8,417.7z"/>
               </g>
-            </svg>
+              </svg>
+              info@reen.com
+            </a>
           </div>
           </div>
-          </a>
-        </div>
+          <div class="footer-item paragraph footer-text-style">
+            <h3>Free updates</h3>
+            <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
 
-      </div>
+            <div class="subscribe-form">
+              <form name="subscribe-form" autocomplete="on">
+                <input class="subscribe" type="email" placeholder="Your email..." required>
+                <input type="submit" name="submit" value="subscribe" class="btn-default btn-submit">
+              </form>
+            </div>
 
-      <div class="footer-bottom">
-        <div class="grid nav-footer">
-          <p>&copy;2014 REEN. All rights reserved.</p>
-          <nav>
-            <a class="nav-default nav-footer-item" href="#">Home</a> 
-            <span class="pont">&#183;</span>
-            <a class="nav-default nav-footer-item" href="#">Portfolio</a>
-            <span>&#183;</span>
-            <a class="nav-default nav-footer-item" href="#">Blog</a>
-            <span>&#183;</span>
-            <a class="nav-default nav-footer-item" href="#">About</a>
-            <span>&#183;</span>
-            <a class="nav-default nav-footer-item" href="#">Services</a>
-            <span>&#183;</span>
-            <a class="nav-default nav-footer-item" href="#">Contact</a>
-          </nav>
+            <a href="#" data-scroll="#header">
+            <div class="to-top">
+              <div class="preloader">
+                <i class="fas fa-chevron-up top-arrow"></i>
+            </div>
+            </div>
+            </a>
+          </div>
         </div>
-      </div>
+        <div class="footer-bottom">
+          <div class="grid nav-footer">
+            <p>&copy;2014 REEN. All rights reserved.</p>
+            <nav>
+              <a class="nav-default nav-footer-item" href="#">Home</a> 
+              <span>&#183;</span>
+              <a class="nav-default nav-footer-item" href="#">Portfolio</a>
+              <span>&#183;</span>
+              <a class="nav-default nav-footer-item" href="#">Blog</a>
+              <span>&#183;</span>
+              <a class="nav-default nav-footer-item" href="#">About</a>
+              <span>&#183;</span>
+              <a class="nav-default nav-footer-item" href="#">Services</a>
+              <span>&#183;</span>
+              <a class="nav-default nav-footer-item" href="#">Contact</a>
+            </nav>
+          </div>
+        </div>
     </div>
     </footer>
- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
