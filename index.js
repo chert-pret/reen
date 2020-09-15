@@ -11,7 +11,7 @@ $(function() {
 
   // Fixed Header
   let headerH = $("#hero").innerHeight(),
-      fixedHeader = $("#fixed-header"),
+      fixedHeader = $("#header-nav"),
       scrollOffset = $(window).scrollTop(); // Scroll value in pixels
   
    checkScroll(scrollOffset)

@@ -17,66 +17,62 @@
   </head>
   <body>
     <header id="header">
-      <div class="container header-row"> <!--for pre header color-->
-        <div class="grid pre-header">
+      <div class="header--color"> <!--for pre header color-->
+        <div class="wrap pre-header">
           <!-- left part of preheader -->
           <div class="header-connection">
-            <a class="connection" href="mailto:info@reen.com">
+            <a class="header-connection__icon" href="mailto:info@reen.com">
               <i class="far fa-envelope"></i>
-              <span>info@reen.com</span>
-              
+              <span>info@reen.com</span>             
             </a>
-            <a class="connection" href="tel:+001234567890">
+            <a class="header-connection__icon" href="tel:+001234567890">
               <i class="fas fa-mobile-alt"></i>
               <span>+00 (123) 456 78 90</span>
             </a>
           </div>
           <!-- right part of preheader -->
-          <div class="social">
-            <a class="img-info facebook" href="https://www.facebook.com/" target="_blank">
+          <div class="header-social">
+            <a class="header-social__icon facebook" href="https://www.facebook.com/" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a class="img-info google" href="https://myaccount.google.com/" target="_blank">
+            <a class="header-social__icon google" href="https://myaccount.google.com/" target="_blank">
               <i class="fab fa-google-plus-g"></i>
             </a>
-            <a class="img-info twitter" href="https://twitter.com/" target="_blank">
+            <a class="header-social__icon twitter" href="https://twitter.com/" target="_blank">
               <i class="fab fa-twitter"></i>
-            <a class="img-info pinterest" href="https://www.pinterest.com/" target="_blank">
+            <a class="header-social__icon pinterest" href="https://www.pinterest.com/" target="_blank">
               <i class="fab fa-pinterest-p"></i>
             </a>
-            <a class="img-info behance" href="https://www.behance.net/" target="_blank">
+            <a class="header-social__icon behance" href="https://www.behance.net/" target="_blank">
               <i class="fab fa-behance"></i>
             </a>
-            <a class="img-info dribble" href="https://dribbble.com/" target="_blank">
+            <a class="header-social__icon dribble" href="https://dribbble.com/" target="_blank">
               <i class="fab fa-dribbble"></i>
             </a>
           </div>
         </div>
       </div>
-
-      <div id="fixed-header">     
+      <div id="header-nav">     
           <div class="header-container">
-            <div class="logo" data-scroll="#hero">
-              <img src="./assets/images/header/navbar/logo.jpg" alt="reen logo" />
-            </div>
-
-            <nav class="nav" id="nav">
-                  <a class="nav-header nav-default" href="#" data-scroll="#hero">home</a>
-                  <a class="nav-header nav-default" href="#" data-scroll="#portfolio">portfolio</a>
-                  <a class="nav-header nav-default" href="#" data-scroll="#blog">blog</a>
-                  <a class="nav-header nav-default" href="#" data-scroll="#hero">pages</a>
-                  <a class="nav-header nav-default" href="#" data-scroll="#features">features</a>
-                  <a class="nav-header nav-default" href="#" data-scroll="#contact">contact</a>          
-            </nav>
-            <button class="nav-toggle" id="nav-toggle">
-              <span class="nav-toggle-item"></span>
-            </button>
+            <div class="wrap">
+                <img class="logo" src="./assets/images/header/navbar/logo.jpg" alt="reen logo" />
+                <nav class="nav" id="nav">
+                  <a class="nav__link nav-default" href="#" data-scroll="#hero">home</a>
+                  <a class="nav__link nav-default" href="#" data-scroll="#portfolio">portfolio</a>
+                  <a class="nav__link nav-default" href="#" data-scroll="#blog">blog</a>
+                  <a class="nav__link nav-default" href="#" data-scroll="#hero">pages</a>
+                  <a class="nav__link nav-default" href="#" data-scroll="#features">features</a>
+                  <a class="nav__link nav-default" href="#" data-scroll="#contact">contact</a>          
+                </nav>
+                <button class="nav-toggle" id="nav-toggle">
+                  <span class="nav-toggle-item"></span>
+                </button>
+            </div>            
           </div>
       </div>
     </header>
     <main>
         <section class="hero" id="hero">
-          <div class="container">
           <!-- slider -->
           <div class="slider">
             <!-- to switch between slides -->
@@ -92,7 +88,7 @@
               <div class="slide slide-1">
                 <!-- "slide-grid" for positioning content-->
                 <div class="slide-grid">
-                <div class="content">
+                <div class="slide-content">
                   <h1>Made for Designers</h1>
                   <p>Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.</p>
                    <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
@@ -103,7 +99,7 @@
               
               <div class="slide slide-2">
                 <div class="slide-grid">
-                <div class="content">
+                <div class="slide-content">
                   <h1>Fresh and <br> beautiful design</h1>
                   <p>REEN is designed to showcase your talent and put your work in the forefront.  Professionally use of typography and layout that fits your content.</p>
                   <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
@@ -114,7 +110,7 @@
               
               <div class="slide slide-3">
                 <div class="slide-grid">
-                <div class="content">
+                <div class="slide-content">
                   <h1><span class="h1-style">Clean and</span><span class="h1-style">reusable code</span></h1>
                   <p>The clean code allows you to easily copy code blocks from content modules and past them in different places or layouts.</p>
                   <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
@@ -125,7 +121,7 @@
               
               <div class="slide slide-4">
                 <div class="slide-grid">
-                <div class="content">
+                <div class="slide-content">
                   <h1><span class="h1-style">Just focus on </span><span class="h1-style">your creativity</span></h1>
                   <p> 
                     Take a break from messing around with heavy coding and spend your time brainstorming ideas for your next project.                   
@@ -138,7 +134,7 @@
             
               <div class="slide slide-5">
                 <div class="slide-grid">
-                <div class="content">
+                <div class="slide-content">
 
                   <h1>Showcase<br>your content</h1>
                   <p>
@@ -167,13 +163,12 @@
             <label for="slide4"></label>
             <label for="slide5"></label>
          </div>
-          </div>
         </div>
         </section>
         <section class="who-we-are" id="features">
-          <div class="container">
-              <div class="header-text grid">
-                <h2 class="header-style">Beautiful. Clean. Responsive.</h2>
+          <div class="wrap">
+              <div class="intro">
+                <h2 class="intro__title">Beautiful. Clean. Responsive.</h2>
                 <p>
                   REEN is a high-quality solution for those who want a beautiful
                   website in no time. It's fully responsive and will adapt
@@ -181,59 +176,43 @@
                   matter. Your content will always looks its absolute best.
                 </p>
               </div>
-
-              <div class="articles grid">
-                  
-                  <div class="article-item">
-
-                    <img class="who-we-are_icon" src="./assets/images/main/who-we-are/icon-heart-empty-1.png" alt="heart">
-               
+              <div class="articles">
+                  <div class="article__item">
+                    <img src="./assets/images/main/who-we-are/icon-heart-empty-1.png" alt="heart">              
                       <h3 class="article-header">Passion</h3>
                       <p class="paragraph">Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
-
                   </div>
-
-                <div class="article-item">
-
-                  <img class="who-we-are_icon" src="./assets/images/main/who-we-are/icon-lamp.png" alt="lamp">
-
+                <div class="article__item">
+                  <img src="./assets/images/main/who-we-are/icon-lamp.png" alt="lamp">
                     <h3 class="article-header">Creativity</h3>
                     <p class="paragraph">Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis</p>
-
                 </div>
-
-                <div class="article-item">
-
-                  <img class="who-we-are_icon" src="./assets/images/main/who-we-are/icon-star-empty-1.png" alt="star">
-
+                <div class="article__item">
+                  <img src="./assets/images/main/who-we-are/icon-star-empty-1.png" alt="star">
                     <h3 class="article-header">Quality</h3>
                     <p class="paragraph">Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis</p>
-
               </div>
-
             </div>
           </div>
           </div>
         </section>
         <section class="latest-work" id="portfolio">
-          <div class="container">
-
-            <div class="header-text grid">
-              <h2 class="header-style">Check out our latest works</h2>
+          <div class="wrap">
+            <div class="intro">
+              <h2 class="intro__title">Check out our latest works</h2>
                 <p>
                   Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
                 </p>
             </div>
-            
-            <div class="works grid">
-              <div class="work-item">
-                <div class="work-img">
+            <!-- Two big images -->
+            <div class="works">
+              <div class="work__item">
+                <div class="work__item-img">
                   <img class="img" src="./assets/images/main/latest-work/figure1.png" alt="grand motel">
                   <div class="work-icon">
                     <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
                   </div>
-                </div>
-                
+                </div>                
                 <h4>
                   Grand Motel gets an identity brushup
                 </h4>
@@ -241,14 +220,13 @@
                   Identity
                 </p>
               </div>
-              <div class="work-item">
-                <div class="work-img">
+              <div class="work__item">
+                <div class="work__img">
                   <img class="img" src="./assets/images/main/latest-work/figure2.png" alt="branding for startup">
                   <div class="work-icon">
                     <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
                   </div>
-                </div>
-                
+                </div>                
                 <h4>
                   Fresh branding for a creative startup
                 </h4>
@@ -336,147 +314,116 @@
              </div>
             </div>
             </div>
-
           </div>
         </section>
         <section class="get-in-touch" id="blog">
-
-          <div class="container">
-            <div class="header-text grid">
-              <h2 class="header-style">Want to work with us?</h2>
+          <div class="wrap">
+            <div class="intro">
+              <h2 class="intro__title">Want to work with us?</h2>
               <p>
                 Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
               </p>
             </div>
             <a class="btn-default btn-who-we-are" href="#">get in touch</a>
           </div>
-
         </section>
     </main>
     <footer class="footer" id="contact">
-      <div class="container">
-        <div class="footer-info grid">          
-          <div class="footer-item paragraph footer-text-style">
-            <h3>who we are</h3>
-            <img class="footer-logo" src="./assets/images/footer/logo.png" alt="reen logo" data-scroll="#header">
-            <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
-            <a class="more" href="#"  data-scroll="#header">
-              More about as
-              <i class="fas fa-long-arrow-alt-right"></i>
-            </a>
-          </div>
-          <div class="footer-item paragraph footer-text-style">
-            <h3>Latest works</h3>
-
-            <div class="img-container">
-              <div class="footer-img">
-              <img class="img" src="./assets/images/footer/image1.png" alt="grand motel">
-              <div class="work-icon">
-                <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+        <div class="footer-info">   
+          <div class="wrap">
+            <div class="footer-info__item paragraph footer-text-style">
+              <h3>who we are</h3>
+              <img class="footer-logo" src="./assets/images/footer/logo.png" alt="reen logo" data-scroll="#header">
+              <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+              <a class="more" href="#"  data-scroll="#header">
+                More about as
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </a>
+            </div>
+            <div class="footer-info__item paragraph footer-text-style">
+              <h3>Latest works</h3>  
+              <div class="img-container">
+                <div class="footer-img">
+                <img class="img" src="./assets/images/footer/image1.png" alt="grand motel">
+                <div class="work-icon">
+                  <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                </div>
+              </div> 
+                <div class="footer-img">
+                <img class="img" src="./assets/images/footer/image2.png" alt="web">
+                <div class="work-icon">
+                  <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                </div>
+              </div> 
+                <div class="footer-img">
+                <img class="img" src="./assets/images/footer/image3.png" alt="vinyl record psd mockup">
+                <div class="work-icon">
+                  <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                </div>
+              </div> 
+                <div class="footer-img">
+                <img class="img" src="./assets/images/footer/image4.png" alt="phone mockup">
+                <div class="work-icon">
+                  <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+                </div>
+              </div> 
               </div>
             </div>
-
-              <div class="footer-img">
-              <img class="img" src="./assets/images/footer/image2.png" alt="web">
-              <div class="work-icon">
-                <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
+            <div class="footer-info__item paragraph footer-text-style">
+              <h3>Get in touch</h3>
+              <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p> 
+              <div class="footer-contacts">
+              <a class="header-connection__icon" href="https://www.google.ru/maps/place/E+Sunset+St,+Long+Beach,+CA+90805,+%D0%A1%D0%A8%D0%90/@33.8475099,-118.1910412,16z/data=!4m5!3m4!1s0x80dd336ec2c36a57:0x9125a95979f2eb22!8m2!3d33.8492005!4d-118.1897884" target="_blank">  
+                <i class="fas fa-map-marker-alt"></i>
+                Sunset Street, California, CA 90805
+              </a>
+              <a class="header-connection__icon" href="tel:+001234567890">
+                <i class="fas fa-mobile-alt"></i>
+                +00 (123) 456 78 90
+              </a>
+              <a class="header-connection__icon" href="mailto:info@reen.com">
+                <i class="far fa-envelope"></i>
+                info@reen.com
+              </a>
+            </div>
+            </div>
+            <div class="footer-info__item paragraph footer-text-style">
+              <h3>Free updates</h3>
+              <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
+              <div class="subscribe-form">
+                <form autocomplete="on">
+                  <input class="subscribe" type="email" placeholder="Your email..." required>
+                  <input type="submit" name="submit" value="subscribe" class="btn-default btn-submit">
+                </form>
+              </div>  
+              <a href="#" data-scroll="#header">
+              <div class="to-top">
+                <div class="preloader">
+                  <i class="fas fa-chevron-up top-arrow"></i>
               </div>
-            </div>
-
-              <div class="footer-img">
-              <img class="img" src="./assets/images/footer/image3.png" alt="vinyl record psd mockup">
-              <div class="work-icon">
-                <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
               </div>
+              </a>
             </div>
-
-              <div class="footer-img">
-              <img class="img" src="./assets/images/footer/image4.png" alt="phone mockup">
-              <div class="work-icon">
-                <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-              </div>
-            </div>
-
-            </div>
-          </div>
-          <div class="footer-item paragraph footer-text-style">
-            <h3>Get in touch</h3>
-            <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
-
-            <div class="contacts">
-            <a class="connection" href="https://www.google.ru/maps/place/E+Sunset+St,+Long+Beach,+CA+90805,+%D0%A1%D0%A8%D0%90/@33.8475099,-118.1910412,16z/data=!4m5!3m4!1s0x80dd336ec2c36a57:0x9125a95979f2eb22!8m2!3d33.8492005!4d-118.1897884" target="_blank">
-
-              <svg class="img-connect" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512">
-                <g>
-                <g><path d="m407.579 87.677c-31.073-53.624-86.265-86.385-147.64-87.637-2.62-.054-5.257-.054-7.878 0-61.374 1.252-116.566 34.013-147.64 87.637-31.762 54.812-32.631 120.652-2.325 176.123l126.963 232.387c.057.103.114.206.173.308 5.586 9.709 15.593 15.505 26.77 15.505 11.176 0 21.183-5.797 26.768-15.505.059-.102.116-.205.173-.308l126.963-232.387c30.304-55.471 29.435-121.311-2.327-176.123zm-151.579 144.323c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.298 72-72 72z"/></g></g> </svg>
-              Sunset Street, California, CA 90805
-            </a>
-            <a class="connection" href="tel:+001234567890">
-              <svg class="img-connect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve">
-                <g>
-                  <g>
-                    <path d="M370.1,0H141.9c-19,0-34.6,15.6-34.6,34.6v442.8c0,19,15.6,34.6,34.6,34.6h228.3c19,0,34.6-15.5,34.6-34.6
-                      V34.6C404.7,15.6,389.1,0,370.1,0z M219.5,24.9h73c2.3,0,4.2,1.9,4.2,4.2c0,2.3-1.9,4.2-4.2,4.2h-73c-2.3,0-4.2-1.9-4.2-4.2
-                      C215.3,26.8,217.2,24.9,219.5,24.9z M256,494.7c-9.6,0-17.3-7.7-17.3-17.3s7.7-17.3,17.3-17.3s17.3,7.7,17.3,17.3
-                      S265.6,494.7,256,494.7z M380.7,448H131.3V54.8h249.3V448z"/>
-                  </g>
-                </g>
-                </svg>
-              +00 (123) 456 78 90
-            </a>
-            <a class="connection" href="mailto:info@reen.com">
-              <svg class="img-connect" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
-              <g>
-                <path d="M512,127.5v-8.1c0-30.4-24.7-55.2-55.2-55.2H55.2C24.7,64.3,0,89,0,119.4v8.1v0.1v265
-                  c0,30.4,24.7,55.2,55.2,55.2h401.7c30.4,0,55.2-24.7,55.2-55.2V127.5C512,127.6,512,127.5,512,127.5L512,127.5z M55.2,94.3h401.7
-                  c13.9,0,25.2,11.3,25.2,25.2v0L281.1,253.4c-13.4,8.9-36.8,8.9-50.2,0L30,119.4v0C30,105.6,41.3,94.3,55.2,94.3L55.2,94.3z
-                  M456.8,417.7H55.2c-13.9,0-25.2-11.3-25.2-25.2V155.5l184.3,122.8C226,286.1,241,290,256,290c15,0,30-3.9,41.7-11.7L482,155.5
-                  v237.1C482,406.4,470.7,417.7,456.8,417.7z"/>
-              </g>
-              </svg>
-              info@reen.com
-            </a>
-          </div>
-          </div>
-          <div class="footer-item paragraph footer-text-style">
-            <h3>Free updates</h3>
-            <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
-
-            <div class="subscribe-form">
-              <form name="subscribe-form" autocomplete="on">
-                <input class="subscribe" type="email" placeholder="Your email..." required>
-                <input type="submit" name="submit" value="subscribe" class="btn-default btn-submit">
-              </form>
-            </div>
-
-            <a href="#" data-scroll="#header">
-            <div class="to-top">
-              <div class="preloader">
-                <i class="fas fa-chevron-up top-arrow"></i>
-            </div>
-            </div>
-            </a>
-          </div>
+          </div>                
         </div>
         <div class="footer-bottom">
-          <div class="grid nav-footer">
+          <div class="wrap nav-footer">
             <p>&copy;2014 REEN. All rights reserved.</p>
             <nav>
-              <a class="nav-default nav-footer-item" href="#">Home</a> 
+              <a class="nav-default nav-footer__item" href="#">Home</a> 
               <span>&#183;</span>
-              <a class="nav-default nav-footer-item" href="#">Portfolio</a>
+              <a class="nav-default nav-footer__item" href="#">Portfolio</a>
               <span>&#183;</span>
-              <a class="nav-default nav-footer-item" href="#">Blog</a>
+              <a class="nav-default nav-footer__item" href="#">Blog</a>
               <span>&#183;</span>
-              <a class="nav-default nav-footer-item" href="#">About</a>
+              <a class="nav-default nav-footer__item" href="#">About</a>
               <span>&#183;</span>
-              <a class="nav-default nav-footer-item" href="#">Services</a>
+              <a class="nav-default nav-footer__item" href="#">Services</a>
               <span>&#183;</span>
-              <a class="nav-default nav-footer-item" href="#">Contact</a>
+              <a class="nav-default nav-footer__item" href="#">Contact</a>
             </nav>
           </div>
         </div>
-    </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
