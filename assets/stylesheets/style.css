@@ -618,7 +618,7 @@ a {
 }
 /*  WHO WE ARE */
 .who-we-are {
-  padding: 130px 0;
+  padding: 100px 0;
 }
 /* tittle */
 .intro {
@@ -673,8 +673,8 @@ a {
 /* LATEST WORK */
 .latest-work {
   background-color: #f2f5f7;
-  padding-top: 130px;
-  padding-bottom: 195px;
+  padding-top: 100px;
+  padding-bottom: 165px;
 }
 .works,
 .footer-info .wrap {
@@ -857,7 +857,7 @@ a {
 }
 /* GET IN TOUCH */
 .get-in-touch {
-  padding: 130px 0;
+  padding: 100px 0;
 }
 .get-in-touch .text-header {
   margin-bottom: 36px;
