@@ -109,7 +109,8 @@ body {
   line-height: 1;
 }
 ol,
-ul {
+ul,
+li {
   list-style: none;
 }
 blockquote,
@@ -133,6 +134,11 @@ table {
 *:after {
   box-sizing: border-box;
 }
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  }
 /*
   ========================================
   default
