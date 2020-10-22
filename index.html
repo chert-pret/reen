@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>REEN</title>
-    <link rel="stylesheet" href="assets/stylesheets/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- <link rel="stylesheet" href="assets/stylesheets/style.css" /> -->
+    <link rel="stylesheet" href="./css/mian.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
       rel="stylesheet"
@@ -16,159 +14,117 @@
     <script src="https://kit.fontawesome.com/8a5b4365d1.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header id="header">
-      <div class="header--color"> <!--for pre header color-->
-        <div class="wrap pre-header">
+    <header id="header" class="header">
+      <div class="header-row"> <!--for pre header color-->
+        <div class="wrap">
           <!-- left part of preheader -->
-          <div class="header-connection">
-            <a class="header-connection__icon" href="mailto:info@reen.com">
+          <div class="header__connection connection">
+            <a class="connection__icon" href="mailto:info@reen.com">
               <i class="far fa-envelope"></i>
               <span>info@reen.com</span>             
             </a>
-            <a class="header-connection__icon" href="tel:+001234567890">
+            <a class="connection__icon" href="tel:+001234567890">
               <i class="fas fa-mobile-alt"></i>
               <span>+00 (123) 456 78 90</span>
             </a>
           </div>
           <!-- right part of preheader -->
-          <div class="header-social">
-            <a class="header-social__icon facebook" href="https://www.facebook.com/" target="_blank">
+          <div class="header__socials">
+            <a class="header__socials-icon facebook" href="https://www.facebook.com/" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a class="header-social__icon google" href="https://myaccount.google.com/" target="_blank">
+            <a class="header__socials-icon google" href="https://myaccount.google.com/" target="_blank">
               <i class="fab fa-google-plus-g"></i>
             </a>
-            <a class="header-social__icon twitter" href="https://twitter.com/" target="_blank">
+            <a class="header__socials-icon twitter" href="https://twitter.com/" target="_blank">
               <i class="fab fa-twitter"></i>
-            <a class="header-social__icon pinterest" href="https://www.pinterest.com/" target="_blank">
+            <a class="header__socials-icon pinterest" href="https://www.pinterest.com/" target="_blank">
               <i class="fab fa-pinterest-p"></i>
             </a>
-            <a class="header-social__icon behance" href="https://www.behance.net/" target="_blank">
+            <a class="header__socials-icon behance" href="https://www.behance.net/" target="_blank">
               <i class="fab fa-behance"></i>
             </a>
-            <a class="header-social__icon dribble" href="https://dribbble.com/" target="_blank">
+            <a class="header__socials-icon dribble" href="https://dribbble.com/" target="_blank">
               <i class="fab fa-dribbble"></i>
             </a>
           </div>
         </div>
       </div>
-      <div id="header-nav">     
-          <div class="header-container">
-            <div class="wrap">
-                <img class="logo" src="./assets/images/header/navbar/logo.jpg" alt="reen logo" />
-                <nav class="nav" id="nav">
-                  <li><a class="nav__link nav-default" href="#" data-scroll="#hero">home</a></li>
-                  <li><a class="nav__link nav-default" href="#" data-scroll="#portfolio">portfolio</a></li>
-                  <li><a class="nav__link nav-default" href="#" data-scroll="#blog">blog</a></li>
-                  <li><a class="nav__link nav-default" href="#" data-scroll="#hero">pages</a></li>
-                  <li><a class="nav__link nav-default" href="#" data-scroll="#features">features</a></li>
-                  <li><a class="nav__link nav-default" href="#" data-scroll="#contact">contact</a></li>       
-                </nav>
-                <button class="nav-toggle" id="nav-toggle">
-                  <span class="nav-toggle-item"></span>
-                </button>
-            </div>            
-          </div>
+      <div class="header__nav">
+        <div class="wrap">
+          <h1 class="logo" data-scroll="#hero">reen.</h1>
+          <nav class="nav">
+            <ul>
+              <li><a href="#" data-scroll="#hero">home</a></li>
+              <li><a href="#" data-scroll="#portfolio">portfolio</a></li>
+              <li><a href="#" data-scroll="#blog">blog</a></li>
+              <li><a href="#" data-scroll="#hero">pages</a></li>
+              <li><a href="#" data-scroll="#features">features</a></li>
+              <li><a href="#" data-scroll="#contact">contact</a></li>
+            </ul>       
+          </nav>
+          <button class="nav-toggle">
+            <span class="nav-toggle__item"></span>
+          </button>
+        </div>
       </div>
     </header>
     <main>
         <section class="hero" id="hero">
           <!-- slider -->
-          <div class="slider">
-            <!-- to switch between slides -->
-            <input id="slide1" type="radio" name="slider" checked>
-            <input id="slide2" type="radio" name="slider">
-            <input id="slide3" type="radio" name="slider">
-            <input id="slide4" type="radio" name="slider">
-            <input id="slide5" type="radio" name="slider">
-          <div class="slides">
-            <div class="slider-container">
-              <!-- "inner-content" for the slide feed  -->
-              <div class="inner-content">    
-              <div class="slide slide-1">
-                <!-- "slide-grid" for positioning content-->
-                <div class="slide-grid">
-                <div class="slide-content">
-                  <h1>Made for Designers</h1>
-                  <p>Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.</p>
-                   <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
+          <div class="hero__slider">
+            <div class="hero__slider-inner">
+              <div class="slide">
+                <div class="slide__content">
+                    <h2>Made for Designers</h2>
+                    <p>Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.</p>
+                    <a class="btn" href="#">Get started now</a>
                 </div>
-                </div>
-                  <img src="./assets/images/main/hero/item-1.jpg" alt="slider1">
+                <img src="./assets/images/main/hero/item-1.jpg" alt="slider1">
               </div>
-              
-              <div class="slide slide-2">
-                <div class="slide-grid">
-                <div class="slide-content">
-                  <h1>Fresh and <br> beautiful design</h1>
-                  <p>REEN is designed to showcase your talent and put your work in the forefront.  Professionally use of typography and layout that fits your content.</p>
-                  <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
-                </div>
+              <div class="slide">
+                <div class="slide__content">
+                    <h2>Fresh and <br> beautiful design</h2>
+                    <p>REEN is designed to showcase your talent and put your work in the forefront.  Professionally use of typography and layout that fits your content.</p>
+                    <a class="btn" href="#">Get started now</a>
                 </div>
                 <img src="./assets/images/main/hero/item-2.jpg" alt="slider 1">
               </div>
-              
-              <div class="slide slide-3">
-                <div class="slide-grid">
-                <div class="slide-content">
-                  <h1><span class="h1-style">Clean and</span><br><span class="h1-style">reusable code</span></h1>
+              <div class="slide">
+                <div class="slide__content">
+                  <h2><span>Clean and</span><br><span>reusable code</span></h2>
                   <p>The clean code allows you to easily copy code blocks from content modules and past them in different places or layouts.</p>
-                  <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
+                  <a class="btn" href="#">Get started now</a>
                 </div>
+                <img src="./assets/images/main/hero/item-3.jpg" alt="">
               </div>
-                  <img src="./assets/images/main/hero/item-3.jpg" alt="">
-              </div>
-              
-              <div class="slide slide-4">
-                <div class="slide-grid">
-                <div class="slide-content">
-                  <h1><span class="h1-style">Just focus on </span><span class="h1-style">your creativity</span></h1>
+              <div class="slide">
+                <div class="slide__content">
+                  <h2><span>Just focus on </span><br><span>your creativity</span></h2>
                   <p> 
-                    Take a break from messing around with heavy coding and spend your time brainstorming ideas for your next project.                   
+                      Take a break from messing around with heavy coding and spend your time brainstorming ideas for your next project.                   
                   </p>
-                  <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
+                  <a class="btn" href="#">Get started now</a>
                 </div>
-              </div>
                   <img src="./assets/images/main/hero/item-4.jpg" alt="">
               </div>
-            
-              <div class="slide slide-5">
-                <div class="slide-grid">
-                <div class="slide-content">
-
-                  <h1>Showcase<br>your content</h1>
-                  <p>
-                    With REEN you have the possibility to create websites for various contents quickly and easily. Now it's up to you!                 
-                  </p>
-                  <a class="btn-default btn-get-in-touch" href="#">Get started now</a>
+              <div class="slide">
+                <div class="slide__content">
+                    <h2>Showcase<br>your content</h2>
+                    <p>
+                      With REEN you have the possibility to create websites for various contents quickly and easily. Now it's up to you!                 
+                    </p>
+                    <a class="btn" href="#">Get started now</a>
                 </div>
+                <img src="./assets/images/main/hero/item-5.jpg" alt="">
               </div>
-                  <img src="./assets/images/main/hero/item-5.jpg" alt="">
-              </div>            
             </div>
-            </div>
-          </div>
-          
-          <div class="controls">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
-            <label for="slide4"></label>
-            <label for="slide5"></label>
-         </div>
-         <div class="pagination">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
-            <label for="slide4"></label>
-            <label for="slide5"></label>
-         </div>
         </div>
         </section>
         <section class="who-we-are" id="features">
           <div class="wrap">
               <div class="intro">
-                <h2 class="intro__title">Beautiful. Clean. Responsive.</h2>
+                <h2>Beautiful. Clean. Responsive.</h2>
                 <p>
                   REEN is a high-quality solution for those who want a beautiful
                   website in no time. It's fully responsive and will adapt
@@ -176,226 +132,197 @@
                   matter. Your content will always looks its absolute best.
                 </p>
               </div>
-              <div class="articles">
-                  <div class="article__item">
-                    <img src="./assets/images/main/who-we-are/icon-heart-empty-1.png" alt="heart">              
-                      <h3 class="article-header">Passion</h3>
-                      <p class="paragraph">Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+              <div class="who-we-are__articles articles">
+                  <div class="articles__item">
+                    <i class="far fa-heart"></i>             
+                      <h3>Passion</h3>
+                      <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
                   </div>
-                <div class="article__item">
-                  <img src="./assets/images/main/who-we-are/icon-lamp.png" alt="lamp">
-                    <h3 class="article-header">Creativity</h3>
-                    <p class="paragraph">Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis</p>
+                <div class="articles__item">
+                  <i class="far fa-lightbulb"></i>
+                    <h3>Creativity</h3>
+                    <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis</p>
                 </div>
-                <div class="article__item">
-                  <img src="./assets/images/main/who-we-are/icon-star-empty-1.png" alt="star">
-                    <h3 class="article-header">Quality</h3>
-                    <p class="paragraph">Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis</p>
+                <div class="articles__item">
+                  <i class="far fa-star"></i>
+                    <h3>Quality</h3>
+                    <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis</p>
               </div>
             </div>
           </div>
           </div>
         </section>
-        <section class="latest-work" id="portfolio">
+        <section class="latest" id="portfolio">
           <div class="wrap">
             <div class="intro">
-              <h2 class="intro__title">Check out our latest works</h2>
+              <h2>Check out our latest works</h2>
                 <p>
                   Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
                 </p>
             </div>
             <!-- Two big images -->
-            <div class="works">
-              <div class="work__item">
-                <div class="work__item-img">
-                  <img class="img" src="./assets/images/main/latest-work/figure1.png" alt="grand motel">
-                  <div class="work-icon">
-                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                  </div>
-                </div>                
-                <h4>
-                  Grand Motel gets an identity brushup
-                </h4>
-                <p>
-                  Identity
-                </p>
+            <div class="latest__works">
+              <div class="latest__works-item">
+                <div class="latest__works-img hover-img">
+                  <img src="./assets/images/main/latest-work/figure1.png" alt="grand motel">
+                  <i class="fas fa-plus"></i>
+                </div>
+                <div class="latest__works-content">
+                  <h4>
+                    Grand Motel gets an identity brushup
+                  </h4>
+                  <p>
+                    Identity
+                  </p>
+                </div>
               </div>
-              <div class="work__item">
-                <div class="work__item-img">
-                  <img class="img" src="./assets/images/main/latest-work/figure2.png" alt="branding for startup">
-                  <div class="work-icon">
-                    <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                  </div>
-                </div>                
-                <h4>
-                  Fresh branding for a creative startup
-                </h4>
-                <p>
-                  Identity
-                </p>
+              <div class="latest__works-item">
+                <div class="latest__works-img hover-img">
+                  <img src="./assets/images/main/latest-work/figure2.png" alt="branding for startup">
+                  <i class="fas fa-plus"></i>
+                </div>
+                <div class="latest__works-content">
+                  <h4>
+                    Fresh branding for a creative startup
+                  </h4>
+                  <p>
+                    Identity
+                  </p>
+                </div>
               </div>
             </div>
             <!-- mini slider -->
-            <div class="carousel">
+            <div class="latest__slider">
               <!--Slider-->
-              <div class="slider">
-                <input type="radio" id="mini-slide-1" name="mini-slider">
-                <input type="radio" id="mini-slide-2" name="mini-slider" checked>
-                <input type="radio" id="mini-slide-3" name="mini-slider">
-              <div class="slides">
-                <div class="slider-container">
-                  <div class="inner-minicontent">
-                    <div class="mini-slide mini-slide-1">
-                      <div class="carousel-img">
-                        <img class="img" src="./assets/images/main/latest-work/item1.jpg" alt="Embroidered logo PSD mockup">
-                        <div class="cover-text">
+              <div class="latest__slider-inner">
+                <div class="latest__slider-item">
+                      <div class="latest__slider-img hover-img">
+                        <img src="./assets/images/main/latest-work/item3.jpg" alt="Vinyl record PSD mockup">
+                        <div class="latest__slider-content">
                           <h4>Embroidered logo PSD mockup</h4>
                           <p>Identity</p>
                         </div>
                       </div> 
-                    </div>
-                    <div class="mini-slide mini-slide-2">
-                      <div class="carousel-img">
-                        <img class="img" src="./assets/images/main/latest-work/item2.jpg" alt="simpl nota mockup">
-                        <div class="cover-text">
+                </div>
+                <div class="latest__slider-item">
+                      <div class="latest__slider-img hover-img">
+                        <img src="./assets/images/main/latest-work/item2.jpg" alt="simpl nota mockup">
+                        <div class="latest__slider-content">
                           <h4>Simpl Nota</h4>
                           <p>Identity</p>
                         </div>
                       </div> 
-                    </div>
-                    <div class="mini-slide mini-slide-3">
-                      <div class="carousel-img">
-                        <img class="img" src="./assets/images/main/latest-work/item3.jpg" alt="Vinyl record PSD mockup">
-                        <div class="cover-text">
+                </div>
+                <div class="latest__slider-item">
+                      <div class="latest__slider-img hover-img">
+                        <img src="./assets/images/main/latest-work/item3.jpg" alt="Vinyl record PSD mockup">
+                        <div class="latest__slider-content">
                           <h4>Vinyl record PSD mockup</h4>
                           <p>Identity</p>
                         </div>
                       </div> 
-                    </div>
-                    <div class="mini-slide mini-slide-4">
-                      <div class="carousel-img">
-                        <img class="img" src="./assets/images/main/latest-work/item4.jpg" alt="Astor & Yancy">
-                        <div class="cover-text">
+                </div>
+                <div class="latest__slider-item">
+                      <div class="latest__slider-img hover-img">
+                        <img src="./assets/images/main/latest-work/item4.jpg" alt="Astor & Yancy">
+                        <div class="latest__slider-content">
                           <h4>Astor & Yancy</h4>
                           <p>Identity</p>
                         </div>
                       </div>
-                    </div>
-                    <div class="mini-slide mini-slide-5">
-                      <div class="carousel-img">
-                        <img class="img" src="./assets/images/main/latest-work/item5.jpg" alt="Signwall">
-                        <div class="cover-text">
+                </div>
+                <div class="latest__slider-item">
+                      <div class="latest__slider-img hover-img">
+                        <img src="./assets/images/main/latest-work/item5.jpg" alt="Signwall">
+                        <div class="latest__slider-content">
                           <h4>Signwall</h4>
                           <p>Identity</p>
                         </div>
                       </div>
-                    </div>
-                    <div class="mini-slide mini-slide-6">
-                      <div class="carousel-img">
-                        <img class="img" src="./assets/images/main/latest-work/item6.jpg" alt="Business card  PSD mockup">
-                        <div class="cover-text">
+                </div>
+                <div class="latest__slider-item">
+                      <div class="latest__slider-img hover-img">
+                        <img src="./assets/images/main/latest-work/item5.jpg" alt="Signwall">
+                        <div class="latest__slider-content">
                           <h4>Business card  PSD mockup</h4>
                           <p>Identity</p>
                         </div>
-                      </div> 
-                    </div>
-                  </div>
+                      </div>
                 </div>
               </div>
-              <div class="mini-pagination">
-                <label for="mini-slide-1"></label>
-                <label for="mini-slide-2"></label>
-                <label for="mini-slide-3"></label>
-              </div>
-              <div class="mini-controls">
-                <label for="mini-slide-1"></label>
-                <label for="mini-slide-2"></label>
-                <label for="mini-slide-3"></label>
-             </div>
-            </div>
             </div>
           </div>
         </section>
         <section class="get-in-touch" id="blog">
           <div class="wrap">
             <div class="intro">
-              <h2 class="intro__title">Want to work with us?</h2>
+              <h2>Want to work with us?</h2>
               <p>
                 Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
               </p>
             </div>
-            <a class="btn-default btn-who-we-are" href="#">get in touch</a>
+            <a class="btn" href="#">get in touch</a>
           </div>
         </section>
     </main>
     <footer class="footer" id="contact">
-        <div class="footer-info">   
+        <div class="footer__main">   
           <div class="wrap">
-            <div class="footer-info__item paragraph footer-text-style">
+            <div class="footer__main-item">
               <h3>who we are</h3>
-              <img class="footer-logo" src="./assets/images/footer/logo.png" alt="reen logo" data-scroll="#header">
+              <h2 class="logo"  data-scroll="#hero">reen.</h2>
               <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
-              <a class="more" href="#"  data-scroll="#header">
+              <a class="footer__main-more" href="#" data-scroll="#header">
                 More about as
                 <i class="fas fa-long-arrow-alt-right"></i>
               </a>
             </div>
-            <div class="footer-info__item paragraph footer-text-style">
+            <div class="footer__main-item">
               <h3>Latest works</h3>  
-              <div class="img-container">
-                <div class="footer-img">
-                <img class="img" src="./assets/images/footer/image1.png" alt="grand motel">
-                <div class="work-icon">
-                  <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                </div>
-              </div> 
-                <div class="footer-img">
-                <img class="img" src="./assets/images/footer/image2.png" alt="web">
-                <div class="work-icon">
-                  <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                </div>
-              </div> 
-                <div class="footer-img">
-                <img class="img" src="./assets/images/footer/image3.png" alt="vinyl record psd mockup">
-                <div class="work-icon">
-                  <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                </div>
-              </div> 
-                <div class="footer-img">
-                <img class="img" src="./assets/images/footer/image4.png" alt="phone mockup">
-                <div class="work-icon">
-                  <img src="./assets/images/main/latest-work/icon-plus.png" alt="icon plus">
-                </div>
-              </div> 
+              <div class="footer__img">
+                <div class="hover-img">
+                  <img class="img" src="./assets/images/footer/image1.png" alt="grand motel">
+                  <i class="fas fa-plus"></i>
+                </div> 
+                <div class="hover-img">
+                  <img class="img" src="./assets/images/footer/image2.png" alt="web">
+                  <i class="fas fa-plus"></i>
+                </div> 
+                <div class="hover-img">
+                  <img class="img" src="./assets/images/footer/image3.png" alt="vinyl record psd mockup">
+                  <i class="fas fa-plus"></i>
+                </div> 
+                <div class="hover-img">
+                  <img class="img" src="./assets/images/footer/image4.png" alt="phone mockup">
+                  <i class="fas fa-plus"></i>
+                </div> 
               </div>
             </div>
-            <div class="footer-info__item paragraph footer-text-style">
+            <div class="footer__main-item">
               <h3>Get in touch</h3>
               <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p> 
               <div class="footer-contacts">
-              <a class="header-connection__icon" href="https://www.google.ru/maps/place/E+Sunset+St,+Long+Beach,+CA+90805,+%D0%A1%D0%A8%D0%90/@33.8475099,-118.1910412,16z/data=!4m5!3m4!1s0x80dd336ec2c36a57:0x9125a95979f2eb22!8m2!3d33.8492005!4d-118.1897884" target="_blank">  
+              <a class="connection__icon" href="https://www.google.ru/maps/place/E+Sunset+St,+Long+Beach,+CA+90805,+%D0%A1%D0%A8%D0%90/@33.8475099,-118.1910412,16z/data=!4m5!3m4!1s0x80dd336ec2c36a57:0x9125a95979f2eb22!8m2!3d33.8492005!4d-118.1897884" target="_blank">  
                 <i class="fas fa-map-marker-alt"></i>
                 Sunset Street, California, CA 90805
               </a>
-              <a class="header-connection__icon" href="tel:+001234567890">
+              <a class="connection__icon" href="tel:+001234567890">
                 <i class="fas fa-mobile-alt"></i>
                 +00 (123) 456 78 90
               </a>
-              <a class="header-connection__icon" href="mailto:info@reen.com">
+              <a class="connection__icon" href="mailto:info@reen.com">
                 <i class="far fa-envelope"></i>
                 info@reen.com
               </a>
             </div>
             </div>
-            <div class="footer-info__item paragraph footer-text-style">
+            <div class="footer__main-item">
               <h3>Free updates</h3>
               <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
-              <div class="subscribe-form">
-                <form autocomplete="on">
-                  <input class="subscribe" type="email" placeholder="Your email..." required>
-                  <input type="submit" name="submit" value="subscribe" class="btn-default btn-submit">
-                </form>
-              </div>  
+              <form class="footer__form" autocomplete="on">
+                <input class="footer__form-input" type="email" placeholder="Your email..." required>
+                <input type="submit" name="submit" value="subscribe" class="footer__form-submit btn">
+              </form>  
               <a href="#" data-scroll="#header">
               <div class="to-top">
                 <div class="preloader">
@@ -406,26 +333,41 @@
             </div>
           </div>                
         </div>
-        <div class="footer-bottom">
-          <div class="wrap nav-footer">
+        <div class="footer__bottom">
+          <div class="wrap">
             <p>&copy;2014 REEN. All rights reserved.</p>
             <nav>
-              <a class="nav-default nav-footer__item" href="#">Home</a> 
-              <span>&#183;</span>
-              <a class="nav-default nav-footer__item" href="#">Portfolio</a>
-              <span>&#183;</span>
-              <a class="nav-default nav-footer__item" href="#">Blog</a>
-              <span>&#183;</span>
-              <a class="nav-default nav-footer__item" href="#">About</a>
-              <span>&#183;</span>
-              <a class="nav-default nav-footer__item" href="#">Services</a>
-              <span>&#183;</span>
-              <a class="nav-default nav-footer__item" href="#">Contact</a>
+              <ul>
+                <li>
+                  <a href="#" data-scroll="#hero">Home</a> 
+                  <span>&#183;</span>
+                </li>
+                <li>
+                  <a href="#" data-scroll="#portfolio">Portfolio</a>
+                  <span>&#183;</span>
+                </li>
+                <li><a href="#" data-scroll="#blog">Blog</a>
+                  <span>&#183;</span>
+                </li>
+                <li>
+                  <a href="#" data-scroll="#hero">About</a>
+                  <span>&#183;</span>
+                </li>
+                <li>
+                  <a href="#" data-scroll="#features">Services</a>
+                  <span>&#183;</span>
+                </li>
+                <li>
+                  <a href="#" data-scroll="#header">Contact</a>
+                </li>
+              </ul>
             </nav>
           </div>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
